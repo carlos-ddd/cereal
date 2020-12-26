@@ -115,6 +115,10 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     invalidGiraffeHondaDEPRECATED @49;
     canErrorPersistentDEPRECATED @83;
     startupWhitePandaDEPRECATED @82;
+
+    pqTimebombWarn @92;               # PQ Timebomb
+    pqTimebombBypassing @93;
+    pqTimebombBypassed @94;
   }
 }
 
@@ -154,6 +158,7 @@ struct CarState {
   stockAeb @30 :Bool;
   stockFcw @31 :Bool;
   espDisabled @32 :Bool;
+  stopSteering @37 :Bool; 	   # PQ Timebomb
 
   # cruise state
   cruiseState @10 :CruiseState;
@@ -181,6 +186,8 @@ struct CarState {
   # blindspot sensors
   leftBlindspot @33 :Bool; # Is there something blocking the left lane change
   rightBlindspot @34 :Bool; # Is there something blocking the right lane change
+
+  graActive @38 :Bool;
 
   struct WheelSpeeds {
     # optional wheel speeds
