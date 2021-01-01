@@ -123,7 +123,8 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     
     pqShiftUP @96;                    # carlos-ddd PQ specific
     pqShiftDOWN @97;
-    espIntervention @98;
+    espInterventionDisengage @98;
+    
     
   }
 }
@@ -194,6 +195,8 @@ struct CarState {
   rightBlindspot @34 :Bool; # Is there something blocking the right lane change
 
   graActive @38 :Bool;
+  espIntervention @39;
+  gsaIntvActive @40;
 
   struct WheelSpeeds {
     # optional wheel speeds
