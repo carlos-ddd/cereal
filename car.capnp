@@ -119,6 +119,12 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     pqTimebombWarn @92;               # PQ Timebomb
     pqTimebombBypassing @93;
     pqTimebombBypassed @94;
+    pqTimebombTERMINAL @95;
+    
+    pqShiftUP @96;                    # carlos-ddd PQ specific
+    pqShiftDOWN @97;
+    espIntervention @98;
+    
   }
 }
 
