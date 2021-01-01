@@ -195,8 +195,8 @@ struct CarState {
   rightBlindspot @34 :Bool; # Is there something blocking the right lane change
 
   graActive @38 :Bool;
-  espIntervention @39;
-  gsaIntvActive @40;
+  espIntervention @39 :Bool;
+  gsaIntvActive @40 :Bool;
 
   struct WheelSpeeds {
     # optional wheel speeds
