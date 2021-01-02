@@ -196,7 +196,7 @@ struct CarState {
 
   graActive @38 :Bool;
   espIntervention @39 :Bool;
-  gsaIntvActive @40 :Bool;
+  engineRPMlimited @40 :Bool;
 
   struct WheelSpeeds {
     # optional wheel speeds
